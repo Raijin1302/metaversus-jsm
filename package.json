@@ -6,12 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "npm run build && next export -o _static"
   },
   "dependencies": {
     "eslint-config-next": "13.0.3",
     "framer-motion": "^7.6.7",
-    "next": "13.2.1",
+    "next": "13.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
