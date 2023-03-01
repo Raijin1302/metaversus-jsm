@@ -12,7 +12,6 @@ const Navbar = () => (
 
     // sm:px-16 px-6 py-8
   >
-    NavBar
     <div className="absolute w-1/2 inset-0 gradient-01" />
     <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
       <img
