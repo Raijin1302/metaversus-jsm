@@ -1,7 +1,12 @@
 "use client";
 
 import styles from "../styles";
-import { slideIn, staggerContainer, textVariant } from "../utils/motion";
+import {
+  slideIn,
+  staggerContainer,
+  textVariant,
+  textVariant3,
+} from "../utils/motion";
 import { motion } from "framer-motion";
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
@@ -13,11 +18,14 @@ const Hero = () => (
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
       <div className="flex flex-col justify-center items-center relative z-10">
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
+        <motion.h1
+          variants={textVariant3(-50, 1.1)}
+          className={styles.heroHeading}
+        >
           Metaverse
         </motion.h1>
         <motion.div
-          variants={textVariant(1.2)}
+          variants={textVariant3(50, 1.3)}
           className="flex flex-row  justify-center items-center"
         >
           <h1 className={styles.heroHeading}>Ma</h1>

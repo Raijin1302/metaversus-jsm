@@ -14,7 +14,7 @@ export const navVariants = {
     transition: {
       type: "spring",
       stiffness: 80,
-      delay: 1,
+      delay: 0.3,
     },
   },
 };
@@ -53,6 +53,22 @@ export const textVariant = (delay) => ({
   },
   show: {
     y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      duration: 1.25,
+      delay,
+    },
+  },
+});
+
+export const textVariant3 = (slide, delay) => ({
+  hidden: {
+    x: slide,
+    opacity: 0,
+  },
+  show: {
+    x: 0,
     opacity: 1,
     transition: {
       type: "spring",
