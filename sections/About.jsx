@@ -25,7 +25,8 @@ const About = () => (
         feeling like it's really real, you can feel what you feel in this
         metaverse world, because this is really the
         <span className="font-extrabold text-white">
-          madness of the metaverse
+          {" "}
+          madness of the metaverse{" "}
         </span>
         of today, using only VR devices you can easily explore the metaverse
         world you want, turn your dreams into reality. Let's
