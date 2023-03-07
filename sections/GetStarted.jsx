@@ -25,14 +25,14 @@ const GetStarted = () => (
         />
       </motion.div>
       <motion.div
-        variants={fadeIn("right", "spring", 0.2, 1)}
+        variants={fadeIn("right", "tween", 0.2, 1)}
         className="flex-[0.75] flex flex-col justify-center "
       >
         <TypingText title="|  How Metaversus Works" />
         <TitleText title={<>Get started with just a few click</>} />
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-6">
           {startingFeatures.map((feature, index) => (
-            <StartSteps key={feature.id} number={index + 1} {...feature} />
+            <StartSteps key={feature.id} number={index + 1} text={feature} />
           ))}
         </div>
       </motion.div>
